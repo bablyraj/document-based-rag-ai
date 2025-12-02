@@ -48,7 +48,6 @@ HTML_TEMPLATE = '''
 
         .sidebar p {
             font-size: 14px;
-            margin-bottom: 30px;
         }
 
         .api-section {
