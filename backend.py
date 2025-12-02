@@ -136,11 +136,6 @@ async def delete_document(doc_id: str):
     documents_metadata = [d for d in documents_metadata if d['id'] != doc_id]
     return {"success": True}
 
-# @app.post("/api/set-api-key")
-# async def set_api_key(data: dict):
-#     os.environ["GOOGLE_API_KEY"] = data.get("api_key", "")
-#     return {"success": True}
-
 # WebSocket endpoint
 @app.websocket("/ws/chat")
 async def websocket_chat(websocket: WebSocket):
